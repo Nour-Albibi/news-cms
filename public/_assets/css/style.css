@@ -1,0 +1,595 @@
+/*================================================================================
+	Item Name: Stack - Responsive Admin Theme
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+.switch_butt{
+width:44px;
+height:22px;
+border:1px solid #ccc;
+background-color: #fff;
+cursor: pointer;
+border-radius: 3px;
+    margin:5px;
+}
+.switch_butt div{
+width:18px;
+height:18px;
+border-radius: 3px;
+    margin-top:2px;
+margin-left: 2px;
+    margin-right: 5px;
+    z-index: 150;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+/********************Form Element**************************/
+.form_checkBox{
+    width:20px;
+    height:20px;
+    border:0px #ccc solid;
+    border: 1px solid #ccc;
+    margin:9px;
+    border-radius: 3px;
+    background-color: #00b5b8 ;
+}
+.form_checkBox > div{
+    position: relative;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #ccc;
+    margin:9px;
+    background-color: #00b5b8 ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 3px;
+}
+.form_checkBox[checked]{
+    background-image: url('http://localhost/phone/public/fo_el_check.png');
+}
+.form_checkBox > div[ch=on]{
+    background-image: url('http://localhost/phone/public/fo_el_check.png');
+}
+.form_checkBox > div[ch=on]:hover{
+    background-color: red;
+}
+.form_checkBox > div[ch=off]{
+    background-image: url('http://localhost/phone/public/fo_el_check.png');
+    background-color: #eee;
+}
+.form_checkBox > div[ch=off]:hover{
+    background-color: #ddd;
+}
+/* width */
+::-webkit-scrollbar {
+    height: 5px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.3);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0,0,0,0.3);
+}
+.child_link{
+    margin:5px;
+    position: relative;
+    border: 1px solid #eee;
+    padding:5px 10px    5px 10px;
+    border-radius: 5px;
+}
+.child_link[act]{background-color:#00b5b8; color:#fff; }
+.child_link:hover{
+    background-color: #00b5b8; color:#fff; cursor: pointer;
+}
+.child_link div{
+    position: absolute;
+    height: 15px;
+line-height: 15px;
+border:1px solid#eee;
+border-radius: 15px;
+color:#fff;
+text-align: center;
+    margin-top: -14px;
+left:-8px;
+font-size: 10px;
+    padding:0px 5px 0px 5px;
+}
+.child_link div[t]{
+    background-color: #00b5b8;
+}
+.child_link div[n]{
+    background-color: #1782b8;
+}
+.mToolIco{width:120px !important;}
+.mToolIco > div{
+    width:40px;
+    height: 40px;
+    float:left;
+    margin: 3px;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+.mToolIco > div[t]{background-color: #00696a;}  .mToolIco > div[t]:hover{background-color:#00b5b8 ;}
+.mToolIco > div[n]{background-color:#ccc; }.mToolIco > div[n]:hover{background-color:#aaa;}
+.mToolIco > div > div{
+    position:absolute;
+    height:15px;
+    line-height:15px;
+    border:1px solid #eee;
+    border-radius:15px;
+    color:#fff;
+    text-align:center;
+    margin-top:-4px;
+     right:-4px;
+    font-size:10px;
+    padding:0px 5px 0px 5px;
+}
+.mToolIco > div > div[t]{
+    background-color:#00b5b8;
+}
+.mToolIco > div > div[n]{
+    background-color:#ccc;
+}
+.perIcon{
+    width:32px;
+    height:32px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #006a6c ;
+    border-radius: 5px;
+    background-image: url(http://localhost/phone/public/images/per_icon.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+.perIcon div{
+    width:15px;
+    height:15px;
+    line-height: 15px;
+    background-color:#b83527;
+    color:#fff;
+    border-radius: 12px;
+    margin-top: -5px;
+    margin-left:-5px;
+    font-size: 10px;
+    position: absolute;
+    text-align: center;
+}
+.mt1{background-image:url(http://localhost/phone/public/images/mticons.png); background-position: 0px center;}
+.mt2{background-image:url(http://localhost/phone/public/images/mticons.png); background-position: -40px center;}
+.mt3{background-image:url(http://localhost/phone/public/images/mticons.png); background-position: -80px center;}
+.mt4{background-image:url(http://localhost/phone/public/images/mticons.png); background-position: -120px center;}
+.mt5{background-image:url(http://localhost/phone/public/images/mticons.png); background-position: -160px center;}
+.mt0{background-image:url(http://localhost/phone/public/images/mticons.png); background-position: -200px center;}
+/* width */
+::-webkit-scrollbar {
+    -webkit-transition: background-color .2s linear,width .2s ease-in-out;
+    width: 6px;
+    border-radius: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #aaa;
+    /*background: rgba(0,0,0,0.5);*/
+    /*background: #eee;*/
+    -webkit-transition: background-color .2s linear,width .2s ease-in-out;
+    width: 6px;
+    border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    /*background: #888;*/
+    background: #aaa;
+    /*background: rgba(0,0,0,0.5);*/
+    /*background: #eee;*/
+    -webkit-transition: background-color .2s linear,width .2s ease-in-out;
+    width: 6px;
+    border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #929292;
+    /*background: rgba(0,0,0,0.5);*/
+    /*background: #eee;*/
+    -webkit-transition: background-color .2s linear,width .2s ease-in-out;
+    width: 6px;
+    border-radius: 2px;
+}
+.loadWin{
+    width:100%;
+    height:100%;
+    position: fixed;
+    top:0px;
+    z-index:50000;
+    background: rgba(0,0,0,0.8);
+    text-align: center;
+    display: none;
+}
+.load_img_con{
+margin:auto;
+width:90%;
+color:#fff;
+margin-top: 40px;
+}
+load_img_con div{text-align: center}
+.progressShow{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height:10px;
+    width:100%;
+    border:1px #000 solid;
+    background-color: rgba(204,204,204,0.5);
+    border-radius: 2px;
+}
+.progressShow div{
+    height:9px;
+    width: 1px;
+    background: url('http://localhost/phone/public/images/preloader2.gif')  #00b5b8 left center;
+    border-radius: 2px;
+}
+.uibox{
+    position: relative;
+    width:60px ;
+    height:60px ;
+    border: 1px #ccc solid;
+    border-radius: 2px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-left: 10px;
+    /*margin-bottom: 10px;*/
+}
+.uibox:hover{cursor: pointer}
+.uibox2:hover{cursor: pointer}
+.upimageCon{
+    border:1px #ccc solid;
+    margin:10px;
+    /*padding:10px;*/
+    position:relative;
+    min-height:60px;
+    border-radius:2px;
+}
+.imgUp{
+    width: 60px;
+    height: 60px;
+    line-height:40px;
+    background:url('http://localhost/phone/public/images/cam.png') #00b5b8 no-repeat center center !important;
+    text-align:center;
+    color:#fff;
+    font-family:tahoma;
+    border-radius:2px;
+    /*margin-bottom:10px;*/
+}
+.imgUp:hover{background-color:#009294;}
+.imgUpHol{
+    position: relative;
+    overflow: hidden;
+}
+.imgUpHol input {
+    position: absolute;
+    top: 0;
+    right: 0; /* not left, because only the right part of the input seems to
+                 be clickable in some browser I can't remember */
+    cursor: pointer;
+    opacity: 0.0;
+    filter: alpha(opacity=0); /* and all the other old opacity stuff you
+                                 want to support */
+    font-size: 300px; /* wtf, but apparently the most reliable way to make
+                         a large part of the input clickable in most browsers */
+    height: 200px;
+}
+.lod_img_con{
+    margin:auto;
+    width:90%;
+    color:#fff;
+    margin-top:40px;
+}
+.lod_img_con div{text-align:center;}
+.progressShow{
+    margin-top:20px;
+    margin-bottom:20px;
+    height:10px;
+    width:100%;
+    border:1px #000 solid;
+    background-color:rgba(204,204,204,0.5);
+    border-radius:2px;
+}
+.uibox{
+    position:relative;
+    width:60px;
+    height:60px;
+    border:1px #ccc solid;
+    border-radius:2px;
+    background-repeat:no-repeat;
+    background-position:center center;
+    margin-left:10px;
+    /*margin-bottom:10px;*/
+}
+.uibox:hover{cursor:pointer;}
+.imgHolder{
+    margin:10px;
+    position:relative;
+    margin-top:60px;
+}
+.imgHolder img{border:1px #000 solid;}
+.imagw_h_bar{
+    position:absolute;
+    top:0px;
+    height:50px;
+    width:100%;
+    left:0px;
+    background-color:#00b5b8;
+    z-index:3;
+}
+.winOprNote{
+    margin:10px;
+    color: #0e8da1;
+    font-size:18px;
+}
+.winOprNote_err{
+    margin:10px;
+    color:red;
+    font-size:18px;
+}
+.lin1{line-height:1px;}.lin20{line-height:20px;}
+.lin30{line-height:30px;}.lin40{line-height:40px;}.lin50{line-height:50px;}.lin60{line-height:60px;}
+
+.winButts{
+    height:49px;
+    position:fixed;
+    z-index:500;
+    right:0px;
+    top:0px;
+}
+.winButts > div{
+    height:49px;
+    line-height:49px;
+    width:49px;
+    border-left:1px  #0e8da1 solid;
+    background-position:center center;
+    background-repeat:no-repeat;
+    float:right;
+}
+.winButts > div:hover{background-color: #0b6c7b; cursor:pointer;}
+
+.winButts > div > div{
+    background-color:red;
+    font-family:'ff';
+    font-size:12px;
+    height:15px;
+    line-height:16px;
+    min-width:15px;
+    color:#fff;
+    position:absolute;
+    text-align:center;
+    border-radius:10px;
+    margin-top:5px;
+    margin-left:25px;
+    padding:2px;
+    border:1px #910000 solid;
+}
+.wB_x{ background-image:url(http://localhost/phone/public/images/cancel.png);}
+.wB_del{background:url(http://localhost/misterpet/images/public/icon_c_del.png);}
+.menu_container{
+    border:1px #ccc dashed;
+    margin:5px;
+    margin-left: 0px;
+    min-height: 100px;
+}
+.submenuMod{
+    position: relative;
+    border:1px #999 dashed;
+    margin: 5px;
+    margin-top: 0px;
+    min-height: 40px;
+    border-top:0px;
+    padding-bottom: 10px;
+}
+submenuMod > div{
+    margin: 5px;
+    margin-top:0px;
+    color:#2B333F;
+    padding:5px;
+    height:32px;
+    border-radius: 3px;
+    overflow:hidden;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.mml_txt{
+   margin-left: 4px;
+}
+.menu_container div[l]{
+    margin:5px;
+    margin-bottom: 0px;
+    color:#fff;
+    padding: 5px;
+    height: 32px;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #00b5b8;
+}
+.modm_mod {
+    width: 50%;
+    height: 100%;
+    overflow-x: hidden;
+    max-width: 500px;
+}
+.modm_mod_list{position: static}
+.modm_mod_list > div{
+    margin:5px;
+    margin-bottom: 0px;
+    color:#2f3d44;
+    padding: 5px;
+    height: 32px;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #eee;
+}
+.modm_mod_list > div:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+.editIcon{
+width:32px;
+height:32px;
+background: url(http://localhost/phone/public/images/icon_edit22.png);
+    background-position: center center;
+    margin-top:-4px;
+    cursor: pointer;
+}
+.cb{
+    clear:both;
+}
+.delIcon{
+    width:32px;
+    height:32px;
+    background: url(http://localhost/phone/public/images/icon_c_del.png);
+    border-right: 1px solid #fff;
+    background-position: center center;
+    margin-top:-4px;
+    cursor: pointer;
+}
+.menuOrder{
+    width:32px;
+    height:32px;
+    background-color: #228794;
+    border-radius: 2px;
+    background: url(http://localhost/phone/public/images/ord.png) #228794 no-repeat center center ;
+    margin-top:-4px;
+    cursor: pointer;
+
+}
+.menuOrder:hover{background-color: #0d6a8c; cursor: pointer}
+.mOrdMod div{ background-color: #2dcee3; height:30px; margin-bottom: 10px; line-height: 30px;
+color:#fff; border-radius: 2px;}
+.mOrdMod div:hover{
+    background-color: #0d6a8c; cursor: pointer
+}
+.bord{
+    border:1px #ccc solid;
+    margin: 10px;
+    text-align: center;
+    max-width: 600px;
+    min-height: 40px;
+    border-radius: 4px;
+}
+.cancel_img{
+    width:100%;
+    height:25px;
+    position:absolute;
+    bottom:0px;
+    /*visibility: hidden;*/
+}
+.cancel_img:hover{
+background-color: #8d9c9ca8;
+
+}
+.cancel_img:hover .cancel_img_icon{
+    visibility: visible;
+}
+.cancel_img_icon{
+    width:25px;
+    height:25px;
+    background-image:url('http://localhost/phone/public/images/delete2.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;
+    visibility: hidden;
+    z-index:1111;
+}
+.selected_item{
+    font-size:14px;
+    color:#999;
+    margin:5px;
+    margin-bottom: 5px;
+    text-indent: 22px;
+    padding:5px;
+    max-width: 250px;
+    border-radius: 2px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #eee;
+    color: #333 !important;
+    text-align: center !important;
+}
+.selected_item_hover:hover{
+    color:#ea2f2f;
+    cursor:pointer;
+    background: url(http://localhost/phone/public/images/del.png) no-repeat left center;
+}
+.DisplayNone{
+    display:none;
+}
+.border_error{
+    border:1px solid #ea2f2f !important;
+}
+.items_list_coupon{
+    overflow-y: auto;
+    max-height: 400px;
+}
+.items_list_coupon > div{
+    line-height:20px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    border-bottom:2px #22C2DC solid;
+    margin-right:3px;
+    font-size:14px;
+    text-align: center;
+    background-color: #28C9E0;
+    color:#fff;
+    padding: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor:pointer;
+}
+.norCat .w_li_num{background: url(http://localhost/phone/public/images/checked0.png) no-repeat center center;}
+.w_li_num{
+    line-height: 20px;
+    text-align: center;
+    font-size: 14px;
+    overflow: hidden;
+    width:30px;
+    height:20px;
+    margin-top: 5px;
+    /*line-height: 30px;*/
+    font-weight: bold;
+    border-right:1px solid #ccc;
+}
+#offer_options_type1{
+    display:none;
+}
+#offer_options_type2{
+    display:none;
+}
