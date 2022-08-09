@@ -1,3 +1,14 @@
+The database name: news.sql
+current admin user: 
+email: nour.albibi9@gmail.com
+password: 123456789
+Admin Can Sign up , Login and Logout 
+Create Article with editor.js new gif plugin & NodeJs APIs
+View public article url without authentication system for public users
+
+Thank you and best regards,
+Nour Albibi
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
